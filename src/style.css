@@ -1,0 +1,398 @@
+html{
+	background-color: grey;
+	margin: 0;
+	 padding: 0;
+	 border: 0;
+}
+
+body{
+	margin: 0;
+	margin-top: 3em;
+	width: 60%;
+	margin-left: 20%;
+	background-color: white;
+	padding: 20px;
+	font-family: "Gill Sans", sans-serif;
+}
+
+.navBar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+nav{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+	transition: all 0.5s;
+}
+
+#siteName{
+	font-family: 'Courier New';
+	font-weight: bold;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#identity{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+#mail{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.9s;
+}
+
+#mobile{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*------------- FORM -------------- */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#deco{
+	padding: 5px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+	transition: all 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+	border-radius: 25px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 30%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 20%; /* Full width */
+	margin-left: 40%;
+	top: 10%;
+  height: 60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255,255,255,255); /* Black w/ opacity */
+  /*padding-top: 60px;*/
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  /*border: 1px solid #888;*/
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+input{
+	transition: all 0.7s;
+	outline: none;
+	box-shadow: 0 0 3px black;
+}
+
+input:focus{
+	border-radius: 25px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+canvas{
+  left: 0;
+	width: 100% !important;
+}
+
+/*============ BODY ============*/
+.containerPar{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.paragraph{
+	text-align: justify;
+}
+
+.BigParagraph{
+	text-align: center;
+	padding: 20px 20px;
+	p{
+		font-size: 30px;
+	}
+}
+
+.paragraph2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.paragraphContainer{
+	text-align: justify;
+	text-align-last: right;
+}
+
+.imageContainer{
+	background-image: url('../Images/GAFA.jpg');
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.imageContainer > img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#googl{
+	color: red;
+}
+
+#aapl{
+	color : grey;
+}
+
+#amzn{
+	color: orange;
+}
+
+#fb{
+	color: blue;
+}
+
+#msft{
+	color: green;
+}
+
+.gafa{
+	font-weight: bold;
+}
+
+.ending > h1{
+	text-align: center;
+}
+
+/*========== TABLE ==========*/
+table{
+	width: 100%;
+}
+
+.tableau{
+	overflow-x: auto;
+}
+
+tr:first-child{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+tr > td:nth-child(1){
+	background-color: #babbbc;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+}
+
+tr:first-child > td:nth-child(2){
+	background-color: #ff3333;
+}
+
+tr:first-child > td:nth-child(3){
+	background-color: #ffb833;
+}
+
+tr:first-child > td:nth-child(4){
+	background-color: #3333ff;
+}
+
+tr:first-child > td:nth-child(5){
+	background-color: #999999;
+}
+
+tr:first-child > td:nth-child(6){
+	background-color: #00b300;
+}
+
+tr:nth-child(7){
+	text-align: justify;
+}
+
+table, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 5px 5px;
+}
+
+.survey > h1{
+	text-align: center;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+}
+
+#sending{
+	width: 20%;
+	margin-left: 40%;
+	transition: all 0.7s;
+}
+
+#sending:hover{
+	margin-left: 0;
+	width: 100%;
+	font-size: 20px;
+}
+
+/* ===== Ajustement media ===== */
+@media screen and (max-width : 1000px) {
+	body{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1440px){
+	body{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	.modal{
+		width: 30%;
+		margin-left: 35%;
+		height: 70%;
+	}
+}
